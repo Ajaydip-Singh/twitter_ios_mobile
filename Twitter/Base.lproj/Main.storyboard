@@ -19,7 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FnQ-be-o7W">
                                 <rect key="frame" x="101.5" y="306.5" width="172" height="54"/>
-                                <color key="backgroundColor" red="0.22041117609999999" green="0.53121514719999996" blue="0.68584890460000003" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.092756345360000006" green="0.48377589869999998" blue="0.68584890460000003" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="54" id="JYM-SL-19h"/>
                                     <constraint firstAttribute="width" constant="172" id="nSj-EG-HBc"/>
@@ -48,7 +48,7 @@
             </objects>
             <point key="canvasLocation" x="-2634.4000000000001" y="-952.17391304347836"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Home-->
         <scene sceneID="VgE-IE-Opp">
             <objects>
                 <tableViewController id="6ih-KA-eYb" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                             <outlet property="delegate" destination="6ih-KA-eYb" id="pff-aT-Z1M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="HZK-hK-49g"/>
+                    <navigationItem key="navigationItem" title="Home" id="HZK-hK-49g"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNb-wp-865" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +84,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fm3-wW-cMC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.092756345360000006" green="0.48377589869999998" blue="0.68584890460000003" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="6ih-KA-eYb" kind="relationship" relationship="rootViewController" id="hfA-SI-0Mm"/>
