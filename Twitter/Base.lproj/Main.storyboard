@@ -51,7 +51,7 @@
         <!--Home-->
         <scene sceneID="VgE-IE-Opp">
             <objects>
-                <tableViewController id="6ih-KA-eYb" sceneMemberID="viewController">
+                <tableViewController id="6ih-KA-eYb" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EH2-VZ-y0n">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,7 +71,14 @@
                             <outlet property="delegate" destination="6ih-KA-eYb" id="pff-aT-Z1M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Home" id="HZK-hK-49g"/>
+                    <navigationItem key="navigationItem" title="Home" id="HZK-hK-49g">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="WXH-Hr-629">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogout:" destination="6ih-KA-eYb" id="Pbf-rD-fnW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNb-wp-865" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
