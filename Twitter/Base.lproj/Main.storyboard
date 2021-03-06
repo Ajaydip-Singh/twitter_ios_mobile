@@ -41,7 +41,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="nWr-XX-Lmc" kind="presentation" identifier="loginToHome" id="P6i-LJ-Lbi"/>
+                        <segue destination="nWr-XX-Lmc" kind="presentation" identifier="loginToHome" modalPresentationStyle="overFullScreen" id="P6i-LJ-Lbi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bys-JW-VQ0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -53,7 +53,7 @@
             <objects>
                 <tableViewController id="6ih-KA-eYb" customClass="HomeTableViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EH2-VZ-y0n">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -88,8 +88,9 @@
         <scene sceneID="n7P-nc-yjt">
             <objects>
                 <navigationController id="nWr-XX-Lmc" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="sxj-CJ-glu"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fm3-wW-cMC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.092756345360000006" green="0.48377589869999998" blue="0.68584890460000003" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
