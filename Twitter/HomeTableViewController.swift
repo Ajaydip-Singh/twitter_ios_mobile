@@ -68,6 +68,8 @@ class HomeTableViewController: UITableViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "tweetCell", for: indexPath) as! TweetCell
         
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
+        
         let user = tweetArray[indexPath.row]["user"] as! NSDictionary
         cell.userNameLabel.text = user["name"] as? String
         
@@ -79,6 +81,8 @@ class HomeTableViewController: UITableViewController {
         if let imageData = data {
             cell.profileImageView.image = UIImage(data: imageData)
         }
+        
+        cell.setFavorite(tweetArray[indexPath.row]["favorited"] as! Bool)
         
         return cell
     }
