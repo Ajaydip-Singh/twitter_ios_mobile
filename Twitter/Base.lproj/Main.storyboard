@@ -115,11 +115,30 @@
                                 <action selector="onLogout:" destination="6ih-KA-eYb" id="Pbf-rD-fnW"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="Wse-zk-Sma">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNb-wp-865" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1167.2" y="-952.17391304347836"/>
+        </scene>
+        <!--Tweet View Controller-->
+        <scene sceneID="OhP-Gd-P4T">
+            <objects>
+                <viewController id="raY-s0-P7q" customClass="TweetViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PjW-nC-R3p">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="7t6-UM-Tcy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dnX-IZ-zz3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X2g-jc-y8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="348" y="-952"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="n7P-nc-yjt">
@@ -141,6 +160,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VdD-SK-7RS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1911" y="-952"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aWN-nJ-L88">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0b5-R7-nx0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="07U-4i-7dt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="raY-s0-P7q" kind="relationship" relationship="rootViewController" id="pBv-ZC-qdH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Yh-6C-iGI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="-952"/>
         </scene>
     </scenes>
     <resources>
