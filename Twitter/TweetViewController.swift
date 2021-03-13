@@ -10,6 +10,13 @@ import UIKit
 
 class TweetViewController: UIViewController {
 
+    @IBAction func cancel(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func tweet(_ sender: Any) {
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -117,6 +117,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Tweet" id="Wse-zk-Sma">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="0b5-R7-nx0" kind="presentation" modalPresentationStyle="overFullScreen" id="Xff-2L-Uo3"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
@@ -131,10 +134,40 @@
                     <view key="view" contentMode="scaleToFill" id="PjW-nC-R3p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vna-4Z-7dl">
+                                <rect key="frame" x="0.0" y="44" width="375" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0yY-kI-vQt"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7t6-UM-Tcy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7t6-UM-Tcy" firstAttribute="trailing" secondItem="vna-4Z-7dl" secondAttribute="trailing" id="Ly3-uH-NgF"/>
+                            <constraint firstItem="vna-4Z-7dl" firstAttribute="leading" secondItem="7t6-UM-Tcy" secondAttribute="leading" id="b0x-SL-7yz"/>
+                            <constraint firstItem="vna-4Z-7dl" firstAttribute="top" secondItem="7t6-UM-Tcy" secondAttribute="top" id="iQU-bx-Ep5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dnX-IZ-zz3"/>
+                    <navigationItem key="navigationItem" id="dnX-IZ-zz3">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ZIa-TS-4Bm">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="cancel:" destination="raY-s0-P7q" id="e8T-GQ-r5a"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Tweet" id="A9S-Tm-2Iu">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="tweet:" destination="raY-s0-P7q" id="aOZ-ix-K3m"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X2g-jc-y8U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -169,6 +202,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="07U-4i-7dt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.092756345360000006" green="0.48377589869999998" blue="0.68584890460000003" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -181,6 +215,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
