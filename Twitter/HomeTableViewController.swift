@@ -21,7 +21,8 @@ class HomeTableViewController: UITableViewController {
         loadTweets()
         tweetRefreshControl.addTarget(self, action: #selector(loadTweets), for: .valueChanged)
         tableView.refreshControl = tweetRefreshControl
-        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 150
         
     }
     
